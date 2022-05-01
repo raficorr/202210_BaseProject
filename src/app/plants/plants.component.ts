@@ -10,8 +10,9 @@ import { PlantService } from './plant.service';
 })
 export class PlantsComponent implements OnInit {
 
+  plants:Array<Plants> = []
   constructor(private plantService: PlantService ) { }
-  plants: Array<Plants> | undefined;
+
 
   getPlants(){
     this.plantService.getPlants().subscribe(plants =>{
