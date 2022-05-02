@@ -5,12 +5,13 @@ import { Plants } from './plants';
 import { environment } from 'src/environments/environment';
 
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class PlantService {
 
-  private apiUrl = environment.baseUrl + 'courses.json';
+  private apiUrl = environment.baseUrl + 'plant';
 
 
 constructor(private http: HttpClient) { }

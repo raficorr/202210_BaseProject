@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Plants } from './plants';
-import { dataPlants } from './dataPlants';
 import { PlantService } from './plant.service';
 
 @Component({
@@ -14,7 +13,7 @@ export class PlantsComponent implements OnInit {
   constructor(private plantService: PlantService ) { }
 
 
-  getPlants(){
+  getPlants():void{
     this.plantService.getPlants().subscribe(plants =>{
       this.plants = plants;
     });

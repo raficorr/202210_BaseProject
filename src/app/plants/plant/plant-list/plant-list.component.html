@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+      <div class="col-12 mt-3">
+            <div class="card p-2">
+          <div class="card-body">
+         </div>
+      </div>
+      <br>
+      <h4>Plantas</h4>
+      <div class="row">
+        <div class="col-12 mt-3" *ngFor="let plant of plants;">
+          <div class="card p-2">
+            <div class="card-body">
+              <h5 class="card-title">{{ plant.altura_maxima }}</h5>
+              <p class="lead"><strong>ID </strong>{{plant.id }}</p>
+              <p class="lead"><strong>Nombre Comun: </strong>{{plant.nombre_comun }}</p>
+            </div>
+        </div>
+        </div>
+      </div>
+   </div>
+</div>
